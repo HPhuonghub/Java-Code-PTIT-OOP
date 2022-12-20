@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lietkesinhvientheonganh;
+package lietkesinhvientheonghanh;
 
 /**
  *
@@ -18,11 +18,16 @@ public class SinhVien {
         this.email = email;
     }
 
-    public String getMa() {
-        return ma;
+    public String getLop() {
+        return lop;
     }
-    
+
+    @Override
     public String toString() {
         return ma + " " + hoten + " " + lop + " " + email;
+    }
+
+    public String getMa() {
+        return ma;
     }
 }

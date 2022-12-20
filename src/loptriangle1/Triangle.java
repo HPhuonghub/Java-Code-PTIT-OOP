@@ -3,15 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package loptriangle1;
-import Point.*;
 import java.math.*;
 /**
  *
  * @author DELL
  */
-import java.awt.geom.Point2D;
 public class Triangle {
-    private Point a,b,c;
+    private Point a = new Point();
     private double x1,x2,x3;
     
     public Triangle(Point a, Point b, Point c){

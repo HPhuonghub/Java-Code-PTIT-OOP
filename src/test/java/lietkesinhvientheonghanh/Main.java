@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lietkesinhvientheonganh;
+package lietkesinhvientheonghanh;
 
 import java.util.*;
 
@@ -30,8 +30,15 @@ public class Main {
             s1 = s1.toUpperCase();
             System.out.println("DANH SACH SINH VIEN NGANH " + s.toUpperCase() + ":");
             for(SinhVien j : list){
-                if(s1.equals(j.getMa().substring(5, 7))){
-                    System.out.println(j);
+                if(s1.equals("CN") || s1.equals("AT")){
+                    if(s1.equals(j.getMa().substring(5, 7)) && j.getLop().substring(0 , 1).equals("E") == false){
+                        System.out.println(j);
+                    }
+                }
+                else{
+                    if(s1.equals(j.getMa().substring(5, 7))){
+                        System.out.println(j);
+                    }
                 }
             }
         }
